@@ -106,12 +106,13 @@ class Scene:
             ''',
         )
 
-        self.texture = ImageTexture('examples/data/textures/crate.png')
+    
+        self.texture = ImageTexture('Obed_Munoz/moderngl/examples/data/textures/crate.png')
 
-        self.car_geometry = ModelGeometry('examples/data/models/lowpoly_toy_car.obj')
+        self.car_geometry = ModelGeometry('Obed_Munoz/moderngl/examples/data/models/lowpoly_toy_car.obj')
         self.car = Mesh(self.program, self.car_geometry)
 
-        self.crate_geometry = ModelGeometry('examples/data/models/crate.obj')
+        self.crate_geometry = ModelGeometry('Obed_Munoz/moderngl/examples/data/models/crate.obj')
         self.crate = Mesh(self.program, self.crate_geometry, self.texture)
 
     def camera_matrix(self):
